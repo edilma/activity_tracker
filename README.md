@@ -2,6 +2,11 @@
 
 A bright, drag-and-drop web app to plan spring break activities with time blocks.
 
+## App Screenshot
+
+![Spring Break Activity Tracker Screenshot](https://github.com/edilma/activity_tracker/blob/main/activity_tracker_app.png?raw=true)
+
+
 ## Date Range
 
 - March 10 to March 19, 2026
