@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spring Break Activity Tracker</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;700;800&family=Plus+Jakarta+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-bg" aria-hidden="true"></div>
+    <header class="app-header">
+      <h1>Spring Break Game Plan</h1>
+      <p>March 10-19, 2026 | 10:00 AM-10:00 PM time blocks</p>
+    </header>
+
+    <main class="layout">
+      <aside class="panel bank-panel">
+        <h2>Activity Bank</h2>
+        <p class="hint">Drag any activity into a day column.</p>
+
+        <div class="bank" id="activity-bank"></div>
+
+        <form id="custom-activity-form" class="custom-form">
+          <label for="custom-title">Add your own activity</label>
+          <input id="custom-title" name="title" type="text" maxlength="40" placeholder="Example: Skate practice" required />
+          <div class="form-row">
+            <select id="custom-category" name="category" required>
+              <option value="chores">Chores</option>
+              <option value="sports">Sports</option>
+              <option value="study">Study</option>
+              <option value="friends">Friends</option>
+              <option value="fun">Fun</option>
+            </select>
+            <button type="submit">Add</button>
+          </div>
+        </form>
+      </aside>
+
+      <section class="panel planner-panel">
+        <div class="planner-header">
+          <h2>Two-Week Planner</h2>
+          <p>Tip: move blocks around anytime. Morning = yellow, afternoon = sunset, night = dark.</p>
+          <div class="planner-tools">
+            <div class="time-legend" aria-label="Time color legend">
+              <span class="legend-chip legend-morning">Morning</span>
+              <span class="legend-chip legend-afternoon">Afternoon</span>
+              <span class="legend-chip legend-night">Night</span>
+            </div>
+            <button id="auto-fill-btn" type="button" class="auto-fill-btn">Auto-Fill Balanced Plan</button>
+          </div>
+        </div>
+        <div class="planner-scroll" id="planner-scroll"></div>
+      </section>
+    </main>
+
+    <template id="bank-item-template">
+      <button class="bank-item" draggable="true" type="button"></button>
+    </template>
+
+    <template id="day-column-template">
+      <article class="day-column" data-day-index="0">
+        <header>
+          <h3></h3>
+          <span></span>
+        </header>
+        <div class="timeline"></div>
+      </article>
+    </template>
+
+    <script src="app.js"></script>
+  </body>
+</html>
