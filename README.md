@@ -1,11 +1,19 @@
 # Spring Break Activity Tracker
 
-A bright, drag-and-drop web app to plan spring break activities with time blocks.
+Built with my kid over spring break to keep track of what we did each day.
 
 ## App Screenshot
 
 ![Spring Break Activity Tracker Screenshot](https://github.com/edilma/activity_tracker/blob/main/activity_tracker_app.png?raw=true)
 
+## Ideas to try
+
+- Change the colors — look in the CSS
+- Add a new field, like who you did the activity with
+- Make finished activities show a checkmark
+- Add a counter for how many activities this week
+- Change the date range, hours, etc
+- Break it as much as you want — you can always undo with git.
 
 ## Date Range
 
@@ -70,3 +78,5 @@ Start-Process .\index.html
 
 - The planner is optimized for both desktop and mobile layouts.
 - Browser support: modern Chrome, Edge, Firefox, Safari.
+
+Break it as much as you want — you can always undo with git.
